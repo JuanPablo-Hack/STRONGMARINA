@@ -177,5 +177,5 @@ function enviar_email($nombre, $correo, $asunto, $mensaje)
   //dirección del remitente 
   $headers .= "From: Sitio web <sistemas@twologistic.com>\r\n";
   mail($destinatario, $asunto, $cuerpo, $headers);
-  header("Location: ../contact.html");
+  echo "OK";
 }
