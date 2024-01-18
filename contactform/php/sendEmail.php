@@ -102,10 +102,10 @@ function enviar_email($nombre, $correo, $asunto, $mensaje)
                     "
                   >
                     <a
-                      href="https://gruposoca.com.mx/"
+                      href="https://strongmarina.com.mx/"
                       style="text-decoration: none"
                       ><img
-                        src="http://twologistic.com/images/twologistic.png"
+                        src="https://strongmarina.com.mx/images/logo-strong-marina-300-287.jpg"
                         width="165"
                         alt="Logo"
                         style="
@@ -134,19 +134,22 @@ function enviar_email($nombre, $correo, $asunto, $mensaje)
                       Te ha llegado un mensaje desde tu sitio web!
                     </h1>
                     <p style="margin: 0">
-                      Por medio del presente correo le decimos que la persona ' .
+                      Por medio del presente correo le decimos que la persona <b>' .
         $nombre .
-        ' requiere información acerca de alguna cotización, el cual tiene un corre que es el siguiente
+        '</b>  requiere información acerca de <b>' .
+        $asunto .
+        '</b>   el cual tiene un corre que es el siguiente
                       <a
                         href="#"
                         style="color: #ff2b06; text-decoration: underline"
                         >' .
         $correo .
         '</a
-                      >, por lo que su mensaje enviado y su pregunta es: <br>
-                      ' .
+                      >, por lo que su mensaje enviado y su pregunta es: <br> <br> <br>
+                      <center>  ' .
         $mensaje .
-        '
+        '</center>
+                    
                     </p>
                     <br>
 
@@ -161,16 +164,16 @@ function enviar_email($nombre, $correo, $asunto, $mensaje)
                       padding: 30px;
                       text-align: center;
                       font-size: 12px;
-                      background-color: #2B3F54;
+                      background-color: #026874;
                       color: #fff;
                     "
                   >
                     <p style="margin: 0; font-size: 14px; line-height: 20px">
-                      &reg; Twologistic, todos los derechos reservados 2022<br /><a
+                      &reg; Strong Marina, todos los derechos reservados 2024<br /><a
                         class="unsub"
-                        href="https://twologistic.com/"
+                        href="https://strongmarina.com.mx/"
                         style="color: #fff; text-decoration: underline"
-                        >www.twologistic.com</a
+                        >www.strongmarina.com</a
                       >
                     </p>
                   </td>
