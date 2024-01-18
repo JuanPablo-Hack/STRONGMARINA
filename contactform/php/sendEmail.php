@@ -190,7 +190,7 @@ function enviar_email($nombre, $correo, $asunto, $mensaje)
     $headers = "MIME-Version: 1.0\r\n";
     $headers .= "Content-type: text/html; charset=iso-8859-1\r\n";
     //dirección del remitente
-    $headers .= "From: Sitio web <rramirez@strongmarina.com.mx>\r\n";
+    $headers .= "From: Strong Marina Website <rramirez@strongmarina.com.mx>\r\n";
     mail($destinatario, $asunto, $cuerpo, $headers);
     echo 'OK';
 }
