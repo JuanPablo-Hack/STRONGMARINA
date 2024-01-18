@@ -7,7 +7,7 @@ enviar_email(
 );
 function enviar_email($nombre, $correo, $asunto, $mensaje)
 {
-    $destinatario = 'juanpablodejesusfigueroa@gmail.com';
+    $destinatario = 'rramirez@strongmarina.com.mx';
     $cuerpo =
         ' 
   <!DOCTYPE html>
@@ -190,7 +190,7 @@ function enviar_email($nombre, $correo, $asunto, $mensaje)
     $headers = "MIME-Version: 1.0\r\n";
     $headers .= "Content-type: text/html; charset=iso-8859-1\r\n";
     //dirección del remitente
-    $headers .= "From: Sitio web <sistemas@twologistic.com>\r\n";
+    $headers .= "From: Sitio web <rramirez@strongmarina.com.mx>\r\n";
     mail($destinatario, $asunto, $cuerpo, $headers);
     echo 'OK';
 }
