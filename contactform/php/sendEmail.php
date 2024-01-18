@@ -1,7 +1,7 @@
 ﻿<?php
 
 // Replace this with your own email address
-$to = 'info@strongmarina.com.mx';
+$to = 'juanpablodejesusfigueroa@gmail.com';
 
 function url(){
   return sprintf(
