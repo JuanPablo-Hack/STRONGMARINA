@@ -1,9 +1,15 @@
 ﻿<?php
-enviar_email($_POST['name'], $_POST['email'], $_POST['subject'], $_POST['message']);
+enviar_email(
+    $_POST['name'],
+    $_POST['email'],
+    $_POST['subject'],
+    $_POST['message']
+);
 function enviar_email($nombre, $correo, $asunto, $mensaje)
 {
-  $destinatario = 'juanpablodejesus_figueroa@gmail.com';
-  $cuerpo = ' 
+    $destinatario = 'juanpablodejesus_figueroa@gmail.com';
+    $cuerpo =
+        ' 
   <!DOCTYPE html>
   <html
     lang="en"
@@ -128,13 +134,19 @@ function enviar_email($nombre, $correo, $asunto, $mensaje)
                       Te ha llegado un mensaje desde tu sitio web!
                     </h1>
                     <p style="margin: 0">
-                      Por medio del presente correo le decimos que la persona ' . $nombre . ' requiere información acerca de alguna cotización, el cual tiene un corre que es el siguiente
+                      Por medio del presente correo le decimos que la persona ' .
+        $nombre .
+        ' requiere información acerca de alguna cotización, el cual tiene un corre que es el siguiente
                       <a
                         href="#"
                         style="color: #ff2b06; text-decoration: underline"
-                        >' . $correo . '</a
+                        >' .
+        $correo .
+        '</a
                       >, por lo que su mensaje enviado y su pregunta es: <br>
-                      ' . $mensaje . '
+                      ' .
+        $mensaje .
+        '
                     </p>
                     <br>
 
@@ -171,11 +183,11 @@ function enviar_email($nombre, $correo, $asunto, $mensaje)
     </body>
   </html>
   ';
-  //para el envío en formato HTML 
-  $headers = "MIME-Version: 1.0\r\n";
-  $headers .= "Content-type: text/html; charset=iso-8859-1\r\n";
-  //dirección del remitente 
-  $headers .= "From: Sitio web <sistemas@twologistic.com>\r\n";
-  mail($destinatario, $asunto, $cuerpo, $headers);
-  echo "OK";
+    //para el envío en formato HTML
+    $headers = "MIME-Version: 1.0\r\n";
+    $headers .= "Content-type: text/html; charset=iso-8859-1\r\n";
+    //dirección del remitente
+    $headers .= "From: Sitio web <sistemas@twologistic.com>\r\n";
+    mail($destinatario, $asunto, $cuerpo, $headers);
+    echo 'OK';
 }
