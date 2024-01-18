@@ -7,7 +7,7 @@ enviar_email(
 );
 function enviar_email($nombre, $correo, $asunto, $mensaje)
 {
-    $destinatario = 'juanpablodejesusfigueroa@gmail.com';
+    $destinatario = 'rramirez@strongmarina.com.mx';
     $cuerpo =
         ' 
   <!DOCTYPE html>
